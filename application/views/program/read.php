@@ -1,0 +1,33 @@
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="jarak"></div>
+<hr />
+<div class="album py-5 bg-light" id="pattern">
+<div class="container marketing">
+
+	<div class="row judul">  
+    <div class="col-md-12 text-center">
+      <h1><?= $title ?></h1>
+    </div>
+  	</div>
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+
+      <div class="col-lg-4">
+
+        <img class="img img-responsive img-thumbnail" src="<?= base_url('assets/upload/image/'.$program->gambar) ?>" alt="<?=$program->judul_program?>">
+        
+      
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-8">
+        <p><?= $program->isi_program ?></p>
+      </div><!-- /.col-lg-8 -->
+     
+    </div><!-- /.row -->
+</div>
+</div>
+<div class="jarak"></div>
+

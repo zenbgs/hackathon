@@ -1,0 +1,289 @@
+/*
+Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+*/
+
+.my-container {
+  /* Font */
+  /* Emoji fonts are added to visualise them nicely in Internet Explorer. */
+  font-family: sans-serif, Arial, Verdana, "Trebuchet MS", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 12px;
+  /* font-family: "Open Sans", sans-serif; */
+  /* line-height: 1.25; */
+
+  /* Text color */
+  color: #333;
+
+  /* Remove the background color to make it transparent. */
+  background-color: #fff;
+
+  margin: 20px;
+  /*overflow-x : auto;*/
+}
+
+.my-container ol {
+  list-style-type: decimal !important;
+  display: block;
+  /* list-style-type: decimal; */
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.my-container li {
+  list-style: decimal!important;
+}
+
+.my-container .cke_editable {
+  font-size: 13px;
+  line-height: 1.6;
+
+  /* Fix for missing scrollbars with RTL texts. (#10488) */
+  word-wrap: break-word;
+}
+
+.my-container blockquote {
+  font-style: italic;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  padding: 2px 0;
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 0;
+}
+
+.my-container .cke_contents_ltr blockquote {
+  padding-left: 20px;
+  padding-right: 8px;
+  border-left-width: 5px;
+}
+
+.my-container .cke_contents_rtl blockquote {
+  padding-left: 8px;
+  padding-right: 20px;
+  border-right-width: 5px;
+}
+
+.my-container a {
+  color: #0782c1;
+}
+
+.my-container ol,
+ul,
+dl {
+  /* IE7: reset rtl list margin. (#7334) */
+  *margin-right: 0px;
+  /* Preserved spaces for list items with text direction different than the list. (#6249,#8049)*/
+  padding: 0 40px;
+}
+
+.my-container h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.my-container hr {
+  border: 0px;
+  border-top: 1px solid #ccc;
+}
+
+.my-container img.right {
+  border: 1px solid #ccc;
+  float: right;
+  margin-left: 15px;
+  padding: 5px;
+}
+
+.my-container img.left {
+  border: 1px solid #ccc;
+  float: left;
+  margin-right: 15px;
+  padding: 5px;
+}
+
+.my-container pre {
+  white-space: pre-wrap; /* CSS 2.1 */
+  word-wrap: break-word; /* IE7 */
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.my-container .marker {
+  background-color: Yellow;
+}
+
+.my-container span[lang] {
+  font-style: italic;
+}
+
+.my-container figure {
+  text-align: center;
+  outline: solid 1px #ccc;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  margin: 10px 20px;
+  display: inline-block;
+}
+
+.my-container figure > figcaption {
+  text-align: center;
+  display: block; /* For IE8 */
+}
+
+.my-container a > img {
+  padding: 1px;
+  margin: 1px;
+  border: none;
+  outline: 1px solid #0782c1;
+}
+
+/* Widget Styles */
+.my-container .code-featured {
+  border: 5px solid red;
+}
+
+.my-container .math-featured {
+  padding: 20px;
+  box-shadow: 0 0 2px rgba(200, 0, 0, 1);
+  background-color: rgba(255, 0, 0, 0.05);
+  margin: 10px;
+}
+
+.my-container .image-clean {
+  border: 0;
+  background: none;
+  padding: 0;
+}
+
+.my-container .image-clean > figcaption {
+  font-size: 0.9em;
+  text-align: right;
+}
+
+.my-container .image-grayscale {
+  background-color: white;
+  color: #666;
+}
+
+.my-container .image-grayscale img,
+img.image-grayscale {
+  filter: grayscale(100%);
+}
+
+.my-container .embed-240p {
+  max-width: 426px;
+  max-height: 240px;
+  margin: 0 auto;
+}
+
+.my-container .embed-360p {
+  max-width: 640px;
+  max-height: 360px;
+  margin: 0 auto;
+}
+
+.my-container .embed-480p {
+  max-width: 854px;
+  max-height: 480px;
+  margin: 0 auto;
+}
+
+.my-container .embed-720p {
+  max-width: 1280px;
+  max-height: 720px;
+  margin: 0 auto;
+}
+
+.my-container .embed-1080p {
+  max-width: 1920px;
+  max-height: 1080px;
+  margin: 0 auto;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /*table-layout: fixed;*/
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  /* text-align: center; */
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}

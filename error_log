@@ -1,0 +1,45 @@
+[20-Sep-2021 08:26:57 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home1/man1kotamalang/public_html/company/system/libraries/Session/drivers/Session_files_driver.php on line 210
+[20-Sep-2021 08:27:45 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home1/man1kotamalang/public_html/company/system/libraries/Session/drivers/Session_files_driver.php on line 212
+[20-Sep-2021 08:28:33 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home1/man1kotamalang/public_html/company/system/libraries/Session/drivers/Session_files_driver.php on line 212
+[25-Nov-2021 08:03:34 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:03:34 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:03:34 UTC] PHP Warning:  mkdir(): Invalid path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 131
+[25-Nov-2021 08:05:36 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:05:36 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:05:36 UTC] PHP Warning:  mkdir(): Invalid path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 131
+[25-Nov-2021 08:05:49 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:05:49 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:05:49 UTC] PHP Warning:  mkdir(): Invalid path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 131
+[25-Nov-2021 08:05:58 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:05:58 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:05:58 UTC] PHP Warning:  mkdir(): Invalid path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 131
+[25-Nov-2021 08:05:58 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:05:58 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:05:58 UTC] PHP Warning:  mkdir(): Invalid path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 131
+[25-Nov-2021 08:06:04 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:06:04 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:06:04 UTC] PHP Warning:  mkdir(): Invalid path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 131
+[25-Nov-2021 08:06:08 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:06:08 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:06:08 UTC] PHP Warning:  mkdir(): Invalid path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 131
+[25-Nov-2021 08:06:08 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:06:08 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:06:08 UTC] PHP Warning:  mkdir(): Invalid path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 131
+[25-Nov-2021 08:06:16 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:06:16 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:06:16 UTC] PHP Warning:  mkdir(): Invalid path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 131
+[25-Nov-2021 08:07:47 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:07:47 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:07:47 UTC] PHP Warning:  mkdir(): Invalid path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 131
+[25-Nov-2021 08:08:10 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:08:10 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:08:10 UTC] PHP Warning:  mkdir(): Invalid path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 131
+[25-Nov-2021 08:09:06 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:09:06 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:09:06 UTC] PHP Warning:  mkdir(): Invalid path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 131
+[25-Nov-2021 08:09:12 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:09:12 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:09:12 UTC] PHP Warning:  mkdir(): Invalid path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 131
+[25-Nov-2021 08:09:14 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:09:14 UTC] PHP Notice:  Undefined index: log_path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 127
+[25-Nov-2021 08:09:14 UTC] PHP Warning:  mkdir(): Invalid path in /home1/man1kotamalang/public_html/company/system/core/Log.php on line 131
