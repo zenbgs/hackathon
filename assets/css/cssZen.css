@@ -16516,6 +16516,9 @@ hr.horizontal.gray-light {
     left: 0;
     right: auto;
   }
+  .bg-body, .bg-white{
+    background-color: #000035 !important;
+  }
 }
 .navbar-vertical .navbar-brand-img,
 .navbar-vertical .navbar-brand > img {
