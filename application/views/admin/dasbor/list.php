@@ -108,7 +108,7 @@
             <p class="mb-1 pt-2 text-bold text-white">Selamat Datang di</p>
               <h4 class="text-white font-weight-bolder mb-4 pt-2">Kelurahan Pangongangan</h4>
               <p class="mb-5 text-white">
-              kelurahan pangonangan salah satu kelurahan yang bergerak di kota madiun. dengan jumlah penduduk kurang lebih sebanyak 3.600-an jiwa dimana dibutuhkan sistem informasi yang akurat untuk warga desa agar transparasi informasi dapat dengan mudah diakses.
+              kelurahan pangonangan salah satu kelurahan yang berlokasi di kota madiun. dengan jumlah penduduk kurang lebih sebanyak 3.600-an jiwa dimana dibutuhkan sistem informasi yang akurat untuk warga desa agar transparasi informasi dapat dengan mudah diakses.
               </p>
             </div>
               

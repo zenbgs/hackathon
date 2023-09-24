@@ -16511,6 +16511,12 @@ hr.horizontal.gray-light {
     content: none;
   }
 }
+.desktop{
+  display: block;
+}
+.mobile{
+  display: none !important;
+}
 @media (max-width: 575.98px) {
   .navbar-nav .nav-item.dropdown .dropdown-menu {
     left: 0;
@@ -16518,6 +16524,12 @@ hr.horizontal.gray-light {
   }
   .bg-body, .bg-white{
     background-color: #000035 !important;
+  }
+  .desktop{
+    display: none !important;
+  }
+  .mobile{
+    display: block !important;
   }
 }
 .navbar-vertical .navbar-brand-img,
