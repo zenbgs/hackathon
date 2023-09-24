@@ -58,12 +58,12 @@
                                         class="text-secondary text-xs font-weight-bold"><?= date("d/m/Y", strtotime($bantuan->tgl_mulai)) . ' - ' . date("d/m/Y", strtotime($bantuan->tgl_akhir)) ?></span>
                                 </td>
                                 <td class="align-middle">
-                                    <a href="<?= base_url('admin/bantuan/detail/'.$bantuan->id) ?>"
+                                    <!-- <a href="<?= base_url('admin/bantuan/detail/'.$bantuan->id) ?>"
                                         class="text-gradient text-success font-weight-bold text-xs"
                                         data-original-title="Lihat bantuan">
                                         Lihat
                                     </a>
-                                    &nbsp;
+                                    &nbsp; -->
                                     <a href="<?= base_url('admin/bantuan/edit/'.$bantuan->id) ?>"
                                         class="text-gradient text-warning font-weight-bold text-xs"
                                         data-toggle="tooltip" data-original-title="Edit bantuan">

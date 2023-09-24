@@ -130,16 +130,16 @@
                 </div>
                 <div class="col-sm-auto col-8 my-auto">
                     <div class="h-100">
-                        <h5 class="mb-1 font-weight-bolder">
+                        <span class="mb-1 font-weight-bolder">
                             <?= $user->nama ?>
-                        </h5>
+</span>
                         <p class="mb-0 font-weight-bold text-sm">
                             <?= $user->akses_level ?>
                         </p>
                     </div>
                 </div>
                 <div class="col-sm-auto ms-sm-auto mt-sm-0 mt-3 d-flex">
-                    <label class="form-check-label mb-0">
+                    <label class="form-check-label mb-0" style="color: #344767 !important;">
                         <small id="profileVisibility">Rubah menjadi tampilkan</small>
                     </label>
                     <div class="form-check form-switch ms-2">
@@ -153,7 +153,7 @@
         <div class="card mt-4" id="basic-info">
 
             <div class="card-header">
-                <h5>Biodata</h5>
+                <span>Biodata</span>
             </div>
             <div class="card-body pt-0">
                 <?php if($this->session->flashdata('sukses')){ ?>
@@ -169,14 +169,14 @@
                 <?= form_open(base_url('admin/profile')) ?>
                 <div class="row">
                     <div class="col-6">
-                        <label class="form-label">Nama Depan</label>
+                        <label class="form-label" style="color: #344767 !important;">Nama Depan</label>
                         <div class="input-group">
                             <input id="firstName" value="<?= $user->nama_depan ?>" name="nama_depan"
                                 class="form-control" type="text" placeholder="Zen" required="required">
                         </div>
                     </div>
                     <div class="col-6">
-                        <label class="form-label">Nama Belakang</label>
+                        <label class="form-label" style="color: #344767 !important;">Nama Belakang</label>
                         <div class="input-group">
                             <input id="lastName" value="<?= $user->nama_belakang ?>" name="nama_belakang"
                                 class="form-control" type="text" placeholder="Bagus" required="required">
@@ -185,14 +185,14 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6 col-6">
-                        <label class="form-label mt-4">Username</label>
+                        <label class="form-label mt-4" style="color: #344767 !important;">Username</label>
 
                         <input type="text" name="username" value="<?= $user->username ?>" class="form-control" id="">
                     </div>
                     <div class="col-sm-6">
                         <div class="row">
                             <div class="col-sm-12 col-12">
-                                <label class="form-label mt-4">Hak Akses</label>
+                                <label class="form-label mt-4" style="color: #344767 !important;">Hak Akses</label>
                                 <input type="text" name="akses" readonly value="<?= $user->akses_level ?>"
                                     class="form-control" id="">
                             </div>
@@ -202,14 +202,14 @@
 
                 <div class="row">
                     <div class="col-sm-6 col-6">
-                        <label class="form-label mt-4">NIK</label>
+                        <label class="form-label mt-4" style="color: #344767 !important;">NIK</label>
 
                         <input type="text" name="nik" value="<?= $user->nik ?>" class="form-control" id="">
                     </div>
                     <div class="col-sm-6">
                         <div class="row">
                             <div class="col-sm-12 col-12">
-                                <label class="form-label mt-4">Hak Akses</label>
+                                <label class="form-label mt-4" style="color: #344767 !important;">Hak Akses</label>
                                 <input type="text" name="akses" readonly value="<?= $user->akses_level ?>"
                                     class="form-control" id="">
                             </div>

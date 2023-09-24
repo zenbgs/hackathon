@@ -3,23 +3,23 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Detail Data</h5>
+                <span class="modal-title" id="exampleModalLabel">Detail Data</span>
                 <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="gambar" class="col-form-label">Gambar</label>
+                    <label for="gambar" class="col-form-label" style="color: #344767 !important;">Gambar</label>
                     <br>
                     <img src="" class="fotoZenDua gambar" alt="">
                 </div>
                 <div class="form-group">
-                    <label for="judul" class="col-form-label">Judul</label>
+                    <label for="judul" class="col-form-label" style="color: #344767 !important;">Judul</label>
                     <input type="text" class="form-control judul" readonly>
                 </div>
                 <div class="form-group">
-                    <label for="tanggal" class="col-form-label">Tanggal</label>
+                    <label for="tanggal" class="col-form-label" style="color: #344767 !important;">Tanggal</label>
                     <input type="text" class="form-control tanggal" readonly>
                 </div>
             </div>
@@ -36,7 +36,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Edit Data</h5>
+                <span class="modal-title" id="exampleModalLabel">Edit Data</span>
                 <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
@@ -45,7 +45,7 @@
             <div class="modal-body">
 
                 <div class="form-group">
-                    <label for="gambar" class="col-form-label">Gambar</label>
+                    <label for="gambar" class="col-form-label" style="color: #344767 !important;">Gambar</label>
                     <br>
                     <img src="" class="fotoZenDua gambar" alt="">
                     <br>
@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="judul" class="col-form-label">Judul</label>
+                    <label for="judul" class="col-form-label" style="color: #344767 !important;">Judul</label>
                     <input type="text" name="judul" class="form-control judul">
                     <input type="hidden" name="id" class="id">
                 </div>
@@ -74,7 +74,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Tambah Data</h5>
+                <span class="modal-title" id="exampleModalLabel">Tambah Data</span>
                 <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
@@ -82,12 +82,12 @@
             <?= form_open_multipart(base_url('admin/galeri/tambah')) ?>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="nama" class="col-form-label">Judul</label>
+                    <label for="nama" class="col-form-label" style="color: #344767 !important;">Judul</label>
                     <input type="text" name="judul" placeholder="Gambar Kamar Mandi" class="form-control">
                 </div>
 
                 <div class="form-group">
-                    <label for="nama" class="col-form-label">Gambar</label>
+                    <label for="nama" class="col-form-label" style="color: #344767 !important;">Gambar</label>
                     <input type="file" name="gambar" class="form-control">
                 </div>
 

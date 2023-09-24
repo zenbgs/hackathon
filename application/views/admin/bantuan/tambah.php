@@ -7,11 +7,11 @@
             <div class="card-body p-3">
                 <?= form_open_multipart(base_url('admin/bantuan/tambah')); ?>
                 <div class="form-group">
-                    <label for="judul">Nama Program</label>
+                    <label for="judul" style="color: #344767 !important;">Nama Program</label>
                     <input class="form-control" type="text" name="nama_program" id="judul" required="">
                 </div>
                 <div class="form-group">
-                    <label for="editor">Keterangan</label>
+                    <label for="editor" style="color: #344767 !important;">Keterangan</label>
                     <textarea class="form-control" name="keterangan"></textarea>
                 </div>
             </div>
