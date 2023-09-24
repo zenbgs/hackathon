@@ -274,19 +274,19 @@
                 </div>
                 <?php } ?>
                 <?= form_open(base_url('admin/profile')) ?>
-                <label class="form-label">Password Sekarang</label>
+                <label class="form-label" style="color: #344767 !important;">Password Sekarang</label>
                 <div class="form-group">
                     <input class="form-control" name="pw_sekarang" type="password" placeholder="Password sekarang">
                 </div>
-                <label class="form-label">Password Baru</label>
+                <label class="form-label" style="color: #344767 !important;">Password Baru</label>
                 <div class="form-group">
                     <input class="form-control" name="pw_baru" type="password" placeholder="Password baru">
                 </div>
-                <label class="form-label">Konfirmasi Password Baru</label>
+                <label class="form-label" style="color: #344767 !important;">Konfirmasi Password Baru</label>
                 <div class="form-group">
                     <input class="form-control" name="pw_konfirm" type="password" placeholder="Konfirmasi password">
                 </div>
-                <h5 class="mt-5">Ketentuan Password</h5>
+                <span class="mt-5">Ketentuan Password</span>
                 <p class="text-muted mb-2">
                     Dimohon mengikuti ketentuan ini untuk keamanan password:
                 </p>
@@ -311,7 +311,7 @@
 
         <div class="card mt-4" id="delete">
             <div class="card-header">
-                <h5>Hapus Akun (Coming Soon)</h5>
+                <span>Hapus Akun (Coming Soon)</span>
                 <p class="text-sm mb-0">Saat anda menghapus akun anda, tidak akan bisa dikembalikan lagi, mohon
                     dicermati.</p>
             </div>
