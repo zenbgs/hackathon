@@ -310,6 +310,8 @@ $(window).on('load',function(){
             arrows:true,
         });
 
+
+
         $('.multiple-items').slick({
         infinite: true,
         slidesToShow: 3,
@@ -317,6 +319,18 @@ $(window).on('load',function(){
         autoplay: true,
         autoplaySpeed: 1000,
         arrows:false,
+        responsive: [
+        {
+            breakpoint: 767,
+             settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                    arrows: false
+                }
+        }
+    ]
         });
      });
 

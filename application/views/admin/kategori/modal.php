@@ -10,11 +10,11 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="nama" class="col-form-label">Nama Kategori</label>
+                    <label for="nama" class="col-form-label" style="color: #344767 !important;">Nama Kategori</label>
                     <input type="text" class="form-control nama" readonly>
                 </div>
                 <div class="form-group">
-                    <label for="slug" class="col-form-label">Slug Kategori</label>
+                    <label for="slug" class="col-form-label" style="color: #344767 !important;">Slug Kategori</label>
                     <input type="text" class="form-control slug" readonly>
                 </div>
             </div>
@@ -31,7 +31,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Edit Data</h5>
+                <h5 class="modal-title" id="exampleModalLabel" >Edit Data</h5>
                 <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
@@ -40,7 +40,7 @@
             <div class="modal-body">
 
                 <div class="form-group">
-                    <label for="nama" class="col-form-label">Nama Kategori</label>
+                    <label for="nama" class="col-form-label" style="color: #344767 !important;">Nama Kategori</label>
                     <input type="text" name="nama_kategori" class="form-control nama">
                 </div>
 
@@ -68,7 +68,7 @@
             <div class="modal-body">
 
                 <div class="form-group">
-                    <label for="nama" class="col-form-label">Nama Kategori</label>
+                    <label for="nama" class="col-form-label" style="color: #344767 !important;">Nama Kategori</label>
                     <input type="text" name="nama_kategori" class="form-control">
                 </div>
 

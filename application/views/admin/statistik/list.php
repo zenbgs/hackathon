@@ -12,7 +12,7 @@
                     </button>
                 </div>
                 <?php } ?>
-                <h6 style="float:left !important">Statistik</h6>
+                <span style="float:left !important">Statistik</span>
                 <div class="form-group">
                     <select id="pilih_statistik" class="form-control" onchange="updateChartType()">
                     <option value="agamaChart" selected>Agama</option>

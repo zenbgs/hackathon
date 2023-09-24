@@ -2,7 +2,7 @@
     <div class="col-12 col-xl-6">
         <div class="card h-100">
             <div class="card-header pb-0 p-3">
-                <h6 class="mb-0">Tambah Bantuan</h6>
+                <span class="mb-0">Tambah Bantuan</span>
             </div>
             <div class="card-body p-3">
                 <?= form_open_multipart(base_url('admin/bantuan/tambah')); ?>
@@ -21,7 +21,7 @@
         <div class="card h-100">
             <div class="card-body p-3">
                 <div class="form-group">
-                    <label for="gambar" class="form-control-label">Asal Dana</label>
+                    <label for="gambar" class="form-control-label" style="color: #344767 !important;">Asal Dana</label>
                     <select name="asal_dana" id="" class="form-control">
                       <option value="Pusat">Pusat</option>
                       <option value="Provinsi">Provinsi</option>
@@ -32,10 +32,10 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="status" class="form-control-label">Tanggal Awal</label>
+                    <label for="status" class="form-control-label" style="color: #344767 !important;">Tanggal Awal</label>
                     <input type="date" name="tgl_mulai" class="form-control" id="">
                     <br>
-                    <label for="status" class="form-control-label">Tanggal Akhir</label>
+                    <label for="status" class="form-control-label" style="color: #344767 !important;">Tanggal Akhir</label>
                     <input type="date" name="tgl_akhir" class="form-control" id="">
                 </div>
 
