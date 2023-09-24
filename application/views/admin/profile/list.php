@@ -140,7 +140,7 @@
                 </div>
                 <div class="col-sm-auto ms-sm-auto mt-sm-0 mt-3 d-flex">
                     <label class="form-check-label mb-0">
-                        <small id="profileVisibility">Switch to invisible</small>
+                        <small id="profileVisibility">Rubah menjadi tampilkan</small>
                     </label>
                     <div class="form-check form-switch ms-2">
                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault23" checked=""
@@ -188,6 +188,23 @@
                         <label class="form-label mt-4">Username</label>
 
                         <input type="text" name="username" value="<?= $user->username ?>" class="form-control" id="">
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12 col-12">
+                                <label class="form-label mt-4">Hak Akses</label>
+                                <input type="text" name="akses" readonly value="<?= $user->akses_level ?>"
+                                    class="form-control" id="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-6">
+                        <label class="form-label mt-4">NIK</label>
+
+                        <input type="text" name="nik" value="<?= $user->nik ?>" class="form-control" id="">
                     </div>
                     <div class="col-sm-6">
                         <div class="row">

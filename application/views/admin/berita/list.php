@@ -51,7 +51,7 @@
                                                 alt="user1">
                                         </div>
                                         <div class="d-flex flex-column justify-content-center">
-                                            <h6 class="mb-0 text-sm"><?= $berita->nama ?></h6>
+                                            <span class="mb-0 text-sm"><?= $berita->nama ?></span>
                                             <p class="text-xs text-secondary mb-0"><?= $berita->email ?></p>
                                         </div>
                                     </div>

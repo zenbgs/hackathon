@@ -43,7 +43,7 @@
                                         style="border-radius: 8px;"
                                             src="<?= base_url('assets/upload/image/thumbs/'.$galeri->gambar) ?>"
                                             alt="hoodie">
-                                        <h6 class="ms-3 text-sm my-auto"><?= $galeri->judul_galeri ?></h6>
+                                        <span class="ms-3 text-sm my-auto"><?= $galeri->judul_galeri ?></span>
                                     </div>
                                 </td>
                                 <td class="text-sm">

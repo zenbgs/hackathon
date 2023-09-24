@@ -17,8 +17,8 @@ echo form_open(base_url('index.php/admin/user/tambah'),$attribut);
 	</div>
 
 	<div class="form-group">
-		<label>Email User</label>
-		<input type="text" name="email" class="form-control" placeholder="Email" value="<?= set_value('email') ?>" required>
+		<label>NIK</label>
+		<input type="number" name="nik" class="form-control" placeholder="NIK" value="<?= set_value('nik') ?>" required>
 	</div>
 
 	<div class="form-group">
@@ -41,6 +41,16 @@ echo form_open(base_url('index.php/admin/user/tambah'),$attribut);
 	<div class="form-group">
 		<label>Password</label>
 		<input type="password" name="password" class="form-control" placeholder="Password" value="<?= set_value('password') ?>" required>
+	</div>
+
+	<div class="form-group">
+		<label>No Hp</label>
+		<input type="text" name="no_hp" class="form-control" placeholder="No Hp" value="<?= set_value('no_hp') ?>" required>
+	</div>
+
+	<div class="form-group">
+		<label>Email</label>
+		<input type="email" name="email" class="form-control" placeholder="Email" value="<?= set_value('email') ?>" required>
 	</div>
 
 	<div class="form-group">

@@ -17,18 +17,18 @@ class Login extends CI_Controller {
 		//validasi
 		$valid = $this->form_validation;
 
-		$valid->set_rules('username','Username','required|trim',
+		$valid->set_rules('nik','NIK','required|trim',
 				array('required'	=>	'%s harus diisi'));
 
 		$valid->set_rules('password','Password','required|trim',
 				array('required'	=>	'%s harus diisi'));
 		if($valid->run()) {
-			$username = $this->input->post('username');
+			$nik = $this->input->post('nik');
 			$password = $this->input->post('password');
-			$check_login = $this->user_model->login($username, $password);
+			$check_login = $this->user_model->login($nik, $password);
 			if(count($check_login) == 1) {
 				$this->session->set_userdata('id_user',$check_login[0]->id_user);
-				$this->session->set_userdata('username',$check_login[0]->username);
+				$this->session->set_userdata('nik',$check_login[0]->nik);
 				$this->session->set_userdata('nama',$check_login[0]->nama);
 				$this->session->set_userdata('akses_level',$check_login[0]->akses_level);
 				$this->session->set_flashdata('sukses', 'Anda Berhasil Login');

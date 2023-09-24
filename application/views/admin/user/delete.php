@@ -4,7 +4,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h6 class="modal-title" id="modal-title-notification">
-                    Confirm Hapus</h6>
+                    Konfirmasi Hapus</h6>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
@@ -20,7 +20,7 @@
                 <a href="<?= base_url('admin/user/delete/'.$user->id_user) ?>"
                     class="btn btn-success bg-gradient">Hapus</a>
                 <button type="button" class="btn btn-link btn-danger bg-gradient ml-auto"
-                    data-bs-dismiss="modal">Close</button>
+                    data-bs-dismiss="modal">Tutup</button>
             </div>
         </div>
     </div>

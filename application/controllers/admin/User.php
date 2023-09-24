@@ -51,13 +51,15 @@ class User extends CI_Controller {
 			$nama = $this->input->post('nama');
 			$username = $this->input->post('username');
 			$hak_akses = $this->input->post('hak_akses');
+			$email = $this->input->post('email');
+			$no_telp = $this->input->post('no_telp');
 			$password = sha1($this->input->post('password'));
 
 			$data = array(	'nama'	=>	$nama,
 							'nama_depan' => '-',
 							'nama_belakang' => '-',
-							'email' => '-',
-							'no_telp' => '-',
+							'email' => $email,
+							'no_telp' => $no_telp,
 							'username'	=>	$username,
 							'password' => $password,
 							'akses_level' => $hak_akses,
@@ -74,6 +76,7 @@ class User extends CI_Controller {
 	{
 		//valid
 		$valid = $this->form_validation;
+		$user = $this->user_model->listing();
 
 		$valid->set_rules('nama','Nama','required',
 				array('required'	=>	'%s harus diisi'));
@@ -86,7 +89,7 @@ class User extends CI_Controller {
 		'breadcrumb' => 'User',
 		'sub_breadcrumb' => 'Kelola Pengguna',
 		'activator' => 'user',
-		'isi'	=>	'admin/user/list'
+		'isi'	=>	'admin/user/tambah'
 			);
 		$this->load->view('admin/layout/wrapper', $data, FALSE);
 		//Masuk database
@@ -96,7 +99,9 @@ class User extends CI_Controller {
 							'email'			=>	$i->post('email'),
 							'username'		=>	$i->post('username'),
 							'password'		=>	sha1($i->post('password')),
-							'akses_level'	=>	$i->post('akses_level')
+							'akses_level'	=>	$i->post('akses_level'),
+							'nik'	=>	$i->post('nik'),
+							'no_telp' => $i->post('no_hp')
 						);
 			$this->user_model->tambah($data);
 			$this->session->set_flashdata('sukses', 'Data Telah Ditambah');
@@ -108,6 +113,7 @@ class User extends CI_Controller {
 	//Edit
 	public function edit($id_user)
 	{
+		$id_user = $this->input->post('id_user');
 		$user = $this->user_model->detail($id_user);
 
 		//valid
@@ -136,14 +142,18 @@ class User extends CI_Controller {
 							'email'			=>	$i->post('email'),
 							'username'		=>	$i->post('username'),
 							'password'		=>	sha1($i->post('password')),
-							'akses_level'	=>	$i->post('hak_akses')
+							'no_telp'		=>	$i->post('no_telp'),
+							'akses_level'	=>	$i->post('hak_akses'),
+							'nik'	=>	$i->post('nik'),
 						);
 			}else{
 				$data = array(	'id_user'		=> $id_user,
 							'nama'			=>	$i->post('nama'),
 							'email'			=>	$i->post('email'),
 							'username'		=>	$i->post('username'),
-							'akses_level'	=>	$i->post('hak_akses')
+							'akses_level'	=>	$i->post('hak_akses'),
+							'no_telp'		=>	$i->post('no_telp'),
+							'nik'	=>	$i->post('nik'),
 						);
 			}
 			
@@ -165,7 +175,7 @@ class User extends CI_Controller {
 		$data = array(	'id_user'	=>	$user->id_user);
 		$this->user_model->delete($data);
 		$this->session->set_flashdata('sukses', 'Data Telah dihapus');
-		redirect(base_url('index.php/admin/user'),'refresh');
+		redirect(base_url('admin/user'),'refresh');
 	}
 
 }

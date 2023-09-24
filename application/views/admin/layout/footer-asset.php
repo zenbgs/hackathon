@@ -13,6 +13,7 @@
 <script src="<?= base_url() ?>assets/js/ckeditor/ckeditor.js"></script>
 <script src="<?= base_url() ?>assets/js/custom/custom.js"></script>
 
+
 <script>
 CKEDITOR.replace('editor', {
     toolbar: [{
@@ -175,10 +176,16 @@ $('.btn-edit').on('click', function() {
     const nama = $(this).data('nama');
     const username = $(this).data('username');
     const hak_akses = $(this).data('hak_akses');
+    const email = $(this).data('email');
+    const no_telp = $(this).data('no_telp');
+    const nik = $(this).data('nik');
     $('.id').val(id);
     $('.nama').val(nama);
     $('.username').val(username);
     $('.hak_akses').val(hak_akses);
+    $('.email').val(email);
+    $('.no_telp').val(no_telp);
+    $('.nik').val(nik);
     $('.editModal').modal('show');
 });
 </script>
@@ -261,8 +268,62 @@ if (win && document.querySelector("#sidenav-scrollbar")) {
     };
     Scrollbar.init(document.querySelector("#sidenav-scrollbar"), options);
 }
+
+function drawCountyBoundary(search)
+{
+    var map =  L.map('map', {maxZoom: 30, minZoom: 1}).setView([-8.487384220496068, 116.04262340348217], 17);
+    var url = `https://nominatim.openstreetmap.org/search.php?q=${search}&format=jsonv2`
+    fetch(url, {mode: 'cors', headers: {'Access-Control-Allow-Origin':'*'}}).then(function(response) {
+        // console.log(response.json())
+    return response.json();
+  })
+  .then(function(json) {
+    geojsonFeature = json[0].boundingbox;
+    var bounds = [[geojsonFeature[1],geojsonFeature[0]], [geojsonFeature[3], geojsonFeature[2]]]
+    console.log(bounds)
+    // L.geoJSON(geojsonFeature).addTo(map);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+  });
+}
+
+$(window).on('load',function(){
+        $(".lazy").slick({
+            lazyLoad: 'ondemand',
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+        });
+
+        $('.zenFade').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows:true,
+        });
+
+        $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows:false,
+        });
+     });
+
+drawCountyBoundary('institut asia malang')
 </script>
 <!-- Github buttons -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
 <script src="<?= base_url() ?>assets/js/soft-ui-dashboard.js?v=1.0.9"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

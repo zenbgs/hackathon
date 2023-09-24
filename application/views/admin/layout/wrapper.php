@@ -5,7 +5,7 @@ $this->check_login->check();
 require_once('head.php');
 ?>
 
-<body class="g-sidenav-show bg-gray-100">
+<body class="g-sidenav-show bg-gray-100" style="background: url('<?= base_url('assets/img/bg web-03.svg')?>');background-repeat: no-repeat;background-size: cover;">
     <?php require_once('header.php'); ?>
     <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg">
         <?php require_once('nav.php'); ?>

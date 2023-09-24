@@ -1,3 +1,35 @@
+<div class="modal fade lihatModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalMessageTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Detail Data</h5>
+                <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="gambar" class="col-form-label">Gambar</label>
+                    <br>
+                    <img src="" class="fotoZenDua gambar" alt="">
+                </div>
+                <div class="form-group">
+                    <label for="judul" class="col-form-label">Judul</label>
+                    <input type="text" class="form-control judul" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="tanggal" class="col-form-label">Tanggal</label>
+                    <input type="text" class="form-control tanggal" readonly>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn bg-gradient-primary">Send message</button> -->
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="modal fade editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalMessageTitle"
     aria-hidden="true">
@@ -9,30 +41,22 @@
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <?= form_open(base_url('admin/user/edit/'.$user->id_user)) ?>
+            <?= form_open_multipart(base_url('admin/galeri/edit')) ?>
             <div class="modal-body">
 
                 <div class="form-group">
-                    <label for="nama" class="col-form-label">Nama User</label>
-                    <input type="text" name="nama" class="form-control nama">
+                    <label for="gambar" class="col-form-label">Gambar</label>
+                    <br>
+                    <img src="" class="fotoZenDua gambar" alt="">
+                    <br>
+                    <br>
+                    <input type="file" name="gambar" class="form-control">
                 </div>
 
                 <div class="form-group">
-                    <label for="nama" class="col-form-label">Username</label>
-                    <input type="text" name="username" class="form-control username">
-                </div>
-
-                <div class="form-group">
-                    <label for="nama" class="col-form-label">Hak Akses</label>
-                    <select name="hak_akses" id="" class="form-control hak_akses">
-                    <option value="Penulis">Penulis</option>
-                    <option value="Admin">Admin</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="nama" class="col-form-label">Password</label>
-                    <input type="password" name="password" placeholder="kosongkan jika tidak ingin merubah..." class="form-control">
+                    <label for="judul" class="col-form-label">Judul</label>
+                    <input type="text" name="judul" class="form-control judul">
+                    <input type="hidden" name="id" class="id">
                 </div>
 
             </div>
@@ -55,30 +79,16 @@
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <?= form_open(base_url('admin/user')) ?>
+            <?= form_open_multipart(base_url('admin/galeri/tambah')) ?>
             <div class="modal-body">
-
                 <div class="form-group">
-                    <label for="nama" class="col-form-label">Nama User</label>
-                    <input type="text" name="nama" class="form-control">
+                    <label for="nama" class="col-form-label">Judul</label>
+                    <input type="text" name="judul" placeholder="Gambar Galeri" class="form-control">
                 </div>
 
                 <div class="form-group">
-                    <label for="nama" class="col-form-label">Username</label>
-                    <input type="text" name="username" class="form-control">
-                </div>
-
-                <div class="form-group">
-                    <label for="nama" class="col-form-label">Hak Akses</label>
-                    <select name="hak_akses" id="" class="form-control">
-                    <option value="Penulis">Penulis</option>
-                    <option value="Admin">Admin</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="nama" class="col-form-label">Password</label>
-                    <input type="password" name="password" class="form-control">
+                    <label for="nama" class="col-form-label">Gambar</label>
+                    <input type="file" name="gambar" class="form-control">
                 </div>
 
             </div>

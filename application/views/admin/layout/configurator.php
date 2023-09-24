@@ -5,7 +5,7 @@
   <div class="card shadow-lg">
     <div class="card-header pb-0 pt-3">
       <div class="float-start">
-        <h5 class="mt-3 mb-0">Nurul Ulum Konfigurasi</h5>
+        <h5 class="mt-3 mb-0">Sinar Angan Konfigurasi</h5>
         <p>lihat pilihan design untuk dashboard.</p>
       </div>
       <div class="float-end mt-4">
@@ -34,15 +34,15 @@
       <!-- Sidenav Type -->
       <div class="mt-3">
         <h6 class="mb-0">Tipe Sidenav</h6>
-        <p class="text-sm">Pilih antara 2 tipe sidenav.</p>
+        <p class="text-sm">Tipe sidenav.</p>
       </div>
       <div class="d-flex">
-        <button class="btn bg-gradient-primary w-100 px-3 mb-2 active" data-class="bg-transparent" onclick="sidebarType(this)">
+        <button class="btn bg-gradient-dark w-100 px-3 mb-2 active" data-class="bg-transparent" onclick="sidebarType(this)">
           Transparan
         </button>
-        <button class="btn bg-gradient-primary w-100 px-3 mb-2 ms-2" data-class="bg-white" onclick="sidebarType(this)">
+        <!-- <button class="btn bg-gradient-primary w-100 px-3 mb-2 ms-2" data-class="bg-white" onclick="sidebarType(this)">
           Putih
-        </button>
+        </button> -->
       </div>
       <p class="text-sm d-xl-none d-block mt-2">
         You can change the sidenav type just on desktop view.

@@ -8222,7 +8222,8 @@ fieldset:disabled .btn {
     color: #fff !important;
 }
 .text-body {
-    color: #67748e !important;
+    /* color: #67748e !important; */
+    color: white !important;
 }
 .text-muted {
     color: #6c757d !important;
@@ -16002,7 +16003,8 @@ fieldset:disabled .btn {
 .btn-light:hover,
 .btn.bg-gradient-light,
 .btn.bg-gradient-light:hover {
-    color: #3a416f;
+    /* color: #3a416f; */
+    color: white !important;
 }
 .breadcrumb-item {
     font-size: 0.875rem;
@@ -16058,7 +16060,8 @@ fieldset:disabled .btn {
     line-height: 1.571;
     font-weight: 600;
     font-size: 0.875rem;
-    color: #3a416f;
+    /* color: #3a416f; */
+    color: white;
 }
 .author .stats {
     font-size: 0.875rem;
@@ -17309,7 +17312,8 @@ hr.horizontal.gray-light {
     padding-left: 1rem;
     padding-right: 1rem;
     font-weight: 500;
-    color: #67748e;
+    /* color: #67748e; */
+    color: white !important;
 }
 .navbar-vertical .navbar-nav .nav-link > i {
     min-width: 1.8rem;
@@ -17972,7 +17976,8 @@ hr.horizontal.gray-light {
     font-weight: 700;
     content: "\f107";
     margin-left: auto;
-    color: rgba(58, 65, 111, 0.5);
+    /* color: rgba(58, 65, 111, 0.5); */
+    color: white !important;
     transition: all 0.2s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -17981,7 +17986,8 @@ hr.horizontal.gray-light {
     }
 }
 .navbar-vertical .navbar-nav .nav-link[data-bs-toggle="collapse"][aria-expanded="true"]:after {
-    color: #3a416f;
+    /* color: #3a416f; */
+    color:white !important;
     transform: rotate(180deg);
 }
 .navbar-vertical .navbar-nav .nav-item .collapse .nav,
@@ -17999,7 +18005,8 @@ hr.horizontal.gray-light {
     position: relative;
     background-color: transparent;
     box-shadow: none;
-    color: rgba(58, 65, 111, 0.5);
+    /* color: rgba(58, 65, 111, 0.5); */
+    color: white !important;
     margin-left: 1.35rem;
 }
 .navbar-vertical .navbar-nav .nav-item .collapse .nav .nav-item .nav-link:before,
@@ -18026,7 +18033,8 @@ hr.horizontal.gray-light {
 }
 .navbar-vertical .navbar-nav .nav-item .collapse .nav .nav-item.active .nav-link,
 .navbar-vertical .navbar-nav .nav-item .collapsing .nav .nav-item.active .nav-link {
-    color: #3a416f;
+    /* color: #3a416f; */
+    color: white;
 }
 .navbar-vertical .navbar-nav .nav-item .collapse .nav .nav-item.active .nav-link:before,
 .navbar-vertical .navbar-nav .nav-item .collapsing .nav .nav-item.active .nav-link:before {

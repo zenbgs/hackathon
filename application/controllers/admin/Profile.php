@@ -34,7 +34,8 @@ class Profile extends CI_Controller {
 							'nama_belakang' => $i->post('nama_belakang'),
 							'email'			=>	$i->post('email'),
 							'username'		=>	$i->post('username'),
-							'no_telp' => $i->post('no_telp')
+							'no_telp' => $i->post('no_telp'),
+							'nik' => $i->post('nik')
 						);
 			$this->user_model->edit($data);
 			$this->session->set_flashdata('sukses', 'Profile Telah DiUpdate');

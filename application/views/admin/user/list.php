@@ -13,7 +13,7 @@
                 </div>
                 <?php } ?>
                 <h6 style="float:left !important">Tabel User</h6>
-                <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#tambahModal"
+                <a href="<?= base_url('admin/user/tambah') ?>"
                     class="btn btn-icon btn-sm bg-gradient-success pull-right" style="float: right !important;"
                     type="button">
                     <span class="btn-inner--icon"><i class="fas fa-plus" aria-hidden="true"></i></span>
@@ -29,6 +29,10 @@
                                 </th>
                                 <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                     Username</th>
+                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                    NIK</th>
+                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                    No Telp</th>
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                     Hak Akses</th>
 
@@ -44,11 +48,11 @@
                             <td>
                                     <div class="d-flex px-2 py-1">
                                         <div>
-                                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3"
+                                            <img src="<?= base_url('assets/img/team-2.jpg') ?>" class="avatar avatar-sm me-3"
                                                 alt="user1">
                                         </div>
                                         <div class="d-flex flex-column justify-content-center">
-                                            <h6 class="mb-0 text-sm"><?= $user->nama ?></h6>
+                                            <span class="mb-0 text-sm"><?= $user->nama ?></span>
                                             <p class="text-xs text-secondary mb-0"><?= $user->email ?></p>
                                         </div>
                                     </div>
@@ -58,6 +62,12 @@
                                     <p class="text-xs text-secondary mb-0"><?= $user->username ?></p>
                                 </td>
                                 <td>
+                                    <p class="text-xs text-secondary mb-0"><?= $user->nik ?></p>
+                                </td>
+                                <td>
+                                    <p class="text-xs text-secondary mb-0"><?= $user->no_telp ?></p>
+                                </td>
+                                <td>
                                     <p class="text-xs text-secondary mb-0"><?= $user->akses_level ?></p>
                                 </td>
                                 <td class="align-middle">
@@ -65,6 +75,9 @@
                                         data-nama="<?= $user->nama ?>"
                                         data-username="<?= $user->username ?>"
                                         data-hak_akses="<?= $user->akses_level ?>"
+                                        data-email = "<?= $user->email ?>"
+                                        data-no_telp = "<?= $user->no_telp ?>"
+                                        data-nik = "<?= $user->nik ?>"
                                         class="text-gradient btn-edit text-warning font-weight-bold text-xs"
                                         data-toggle="tooltip" data-original-title="Edit berita">
                                         Edit

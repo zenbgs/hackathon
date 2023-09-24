@@ -10,7 +10,7 @@ class Oops extends CI_Controller {
 					  'isi'		=> 'oops/list'	
 					);
 
-		$this->load->view('layout/wrapper', $data, FALSE);
+		$this->load->view('oops/list', $data, FALSE);
 	}
 
 }
