@@ -1,106 +1,215 @@
-# CodeIgniter App
+<div align="center">
 
-Integrate RESTfull API, Base Model, Ion Auth module and Template module.
+# KIM Hackathon East Java 2023
 
-## Features
+### Village & Madrasah Management System
 
-* [CodeIgniter-Ion-Auth][1]: Simple and Lightweight Auth System for CodeIgniter
-* [Codeigniter-restserver][2]: A fully RESTful server implementation for CodeIgniter using one library, one config file and one controller.
-* [codeigniter-base-model][3]: CodeIgniter base CRUD model to remove repetition and increase productivity
-* [CodeIgniter-Template][4]: A Lightweight Codeigniter Template Libray
-* [CodeIgniter-i18n][5]: i18n library for CodeIgniter 2.1.x
-* [CodeIgniter-Native-Session][6]: codeigniter native session
-* [Handlebars.js][7]: Minimal Templating on Steroids
+[![CodeIgniter](https://img.shields.io/badge/CodeIgniter-3.x-EF4223?style=for-the-badge&logo=codeigniter&logoColor=white)](https://codeigniter.com)
+[![PHP](https://img.shields.io/badge/PHP-7.4+-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-4.x-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
 
-[1]: https://github.com/benedmunds/CodeIgniter-Ion-Auth
-[2]: https://github.com/chriskacerguis/codeigniter-restserver
-[3]: https://github.com/appleboy/Codeigniter-Base-Model
-[4]: https://github.com/appleboy/CodeIgniter-Template
-[5]: https://github.com/appleboy/CodeIgniter-i18n
-[6]: https://github.com/appleboy/CodeIgniter-Native-Session
-[7]: http://handlebarsjs.com/
+**Sistem manajemen desa/madrasah lengkap dengan panel admin yang powerful**
 
-## Installtaion
+</div>
 
-add new virtual hostname on `hosts` file (`/etc/hosts`)
+---
+
+## Tentang Project
+
+Aplikasi web berbasis CodeIgniter untuk manajemen informasi desa/madrasah. Dikembangkan untuk kompetisi **KIM Hackathon East Java 2023**. Sistem ini menyediakan solusi lengkap untuk pengelolaan konten website desa, data kependudukan, berita, galeri, dan berbagai layanan publik.
+
+---
+
+## Fitur Utama
+
+### Public Website
+| Fitur | Deskripsi |
+|-------|-----------|
+| **Beranda** | Landing page dengan berita terbaru, galeri, dan info desa |
+| **Berita** | Portal berita dengan kategori dan pagination |
+| **Layanan** | Informasi layanan publik yang tersedia |
+| **Program** | Showcase program dan kegiatan desa |
+| **Profil** | Profil desa dan struktur organisasi |
+| **Kontak** | Form kontak dan informasi alamat |
+
+### Admin Panel
+| Modul | Fungsi |
+|-------|--------|
+| **Dashboard** | Statistik dan overview data |
+| **Berita** | CRUD artikel dengan rich text editor |
+| **Galeri** | Manajemen foto dan album |
+| **Pegawai** | Data perangkat desa/karyawan |
+| **Kependudukan** | Data statistik penduduk |
+| **Layanan** | Pengelolaan info layanan |
+| **Program** | Manajemen program kerja |
+| **UMKM** | Direktori usaha lokal |
+| **Video** | Library video kegiatan |
+| **Iklan/Banner** | Manajemen banner promosi |
+| **Konfigurasi** | Pengaturan website (logo, kontak, sosmed) |
+| **User Management** | Kelola akun dan hak akses |
+
+---
+
+## Tech Stack
+
+### Backend
+![CodeIgniter](https://img.shields.io/badge/CodeIgniter-3.x-EF4223?style=flat-square&logo=codeigniter&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-7.4+-777BB4?style=flat-square&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=flat-square&logo=mysql&logoColor=white)
+
+### Frontend
+![Bootstrap](https://img.shields.io/badge/Bootstrap-4.x-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
+![jQuery](https://img.shields.io/badge/jQuery-3.x-0769AD?style=flat-square&logo=jquery&logoColor=white)
+![Leaflet](https://img.shields.io/badge/Leaflet-Maps-199900?style=flat-square&logo=leaflet&logoColor=white)
+
+### Admin UI
+![Soft UI](https://img.shields.io/badge/Soft_UI-Dashboard-667eea?style=flat-square)
+![CKEditor](https://img.shields.io/badge/CKEditor-4.x-0287D0?style=flat-square)
+![TinyMCE](https://img.shields.io/badge/TinyMCE-Editor-22A7F0?style=flat-square)
+
+### Libraries
+![AOS](https://img.shields.io/badge/AOS-Animate-68BC71?style=flat-square)
+![Swiper](https://img.shields.io/badge/Swiper-Slider-6332F6?style=flat-square)
+![GLightbox](https://img.shields.io/badge/GLightbox-Gallery-FF6B6B?style=flat-square)
+![Remixicon](https://img.shields.io/badge/Remixicon-Icons-2D8CF0?style=flat-square)
+
+---
+
+## Struktur Project
 
 ```
-127.0.0.1 ci.localhost
+hackathon/
+├── application/
+│   ├── config/          # Konfigurasi aplikasi
+│   ├── controllers/     # Controllers (32 files)
+│   │   ├── admin/       # Admin panel controllers
+│   │   └── *.php        # Public controllers
+│   ├── models/          # Database models (19 files)
+│   ├── views/           # View templates (125+ files)
+│   │   ├── admin/       # Admin panel views
+│   │   └── layout/      # Frontend layouts
+│   └── libraries/       # Custom libraries
+├── assets/              # Admin assets
+│   ├── css/             # Stylesheets
+│   ├── js/              # JavaScript
+│   ├── ckeditor/        # Rich text editor
+│   ├── leaflet/         # Map library
+│   └── upload/          # User uploads
+├── assets_client/       # Frontend assets
+│   ├── css/             # Public stylesheets
+│   ├── js/              # Public scripts
+│   └── images/          # Public images
+├── db/
+│   └── db_testing.sql   # Database dump
+└── system/              # CodeIgniter core
 ```
 
-[Apache](http://httpd.apache.org/): create `.htaccess`.
+---
 
-```
-RewriteEngine on
-RewriteBase /
-RewriteCond $1 !^(index\.php|assets|robots\.txt|$)
-RewriteRule ^(.*)$ index.php/$1 [L,QSA]
-```
+## Instalasi
 
-[Nginx](http://nginx.org/): please add the following to virtualhost config.
+### Requirements
+- PHP 7.4 atau lebih tinggi
+- MySQL 8.0 atau lebih tinggi
+- Apache dengan mod_rewrite enabled
+- Composer (optional)
 
-```
-location / {
-  try_files $uri $uri/ /index.php;
-}
-```
+### Langkah Instalasi
 
-Import the SQL structure
-
-```
-$ mysql -u root -p app < sql/app.sql
-```
-
-## Installtaion with [Homestead](http://laravel.com/docs/4.2/homestead)
-
-Please read [Chinese Blog](http://blog.wu-boy.com/2014/12/codeigniter-with-homestead-development/) or refer the following steps.
-
-Clone the project init `/home/git` foloder.
-
+**1. Clone Repository**
 ```bash
-$ git clone https://github.com/appleboy/CodeIgniter-App.git /home/git/CodeIgniter-App
+git clone https://github.com/zenbgs/hackathon.git
+cd hackathon
 ```
 
-Update `~/.homestead/Homestead.yaml` setting.
+**2. Setup Database**
+```bash
+# Buat database baru
+mysql -u root -p -e "CREATE DATABASE db_hackathon"
 
-```ruby
-folders:
-  - map: /home/appleboy/newProject
-    to: /home/vagrant/Code
-  - map: /home/git/CodeIgniter-App
-    to: /home/vagrant/codeigniter-app
- 
-sites:
-  - map: homestead.app
-    to: /home/vagrant/Code/public
-  - map: codeigniter.app
-    to: /home/vagrant/codeigniter-app/public
- 
-databases:
-  - homestead
-  - app
+# Import struktur dan data
+mysql -u root -p db_hackathon < db/db_testing.sql
 ```
 
-Update `after.sh` as the following:
+**3. Konfigurasi Database**
 
-```
-#!/bin/sh
- 
-# If you would like to do some extra provisioning you may
-# add any commands you wish to this file and they will
-# be run after the Homestead machine is provisioned.
- 
-mysql -uhomestead -psecret app < /home/vagrant/codeigniter-app/sql/app.sql
-```
-
-Start the virtual machine.
-
-```
-$ homestead up --provision
+Edit file `application/config/database.php`:
+```php
+$db['default'] = array(
+    'hostname' => 'localhost',
+    'username' => 'root',
+    'password' => 'your_password',
+    'database' => 'db_hackathon',
+    ...
+);
 ```
 
-open youre browser url: http://codeigniter.app:8000
-## Screenshot
+**4. Konfigurasi Base URL**
 
-<img src="https://raw.githubusercontent.com/appleboy/CodeIgniter-App/master/screenshot/screenshot.png" alt="screenshot" />
+Edit file `application/config/config.php`:
+```php
+$config['base_url'] = 'http://localhost/hackathon/';
+```
 
+**5. Jalankan Aplikasi**
+```
+http://localhost/hackathon
+```
+
+---
+
+## Database Schema
+
+Aplikasi menggunakan **24 tabel** database:
+
+| Tabel | Deskripsi |
+|-------|-----------|
+| `user` | Data pengguna dan autentikasi |
+| `berita` | Artikel berita |
+| `kategori` | Kategori berita |
+| `galeri` | Foto galeri |
+| `pegawai` | Data pegawai/perangkat |
+| `penduduk` | Data kependudukan |
+| `program` | Program kerja |
+| `layanan` | Layanan publik |
+| `umkm` | Data UMKM |
+| `konfigurasi` | Pengaturan website |
+| `identitas_desa` | Identitas desa |
+| `single_page` | Halaman dinamis |
+
+---
+
+## Statistik Project
+
+<div align="center">
+
+| Metric | Count |
+|--------|-------|
+| **Controllers** | 32 files |
+| **Models** | 19 files |
+| **Views** | 125+ files |
+| **Database Tables** | 24 tables |
+| **Admin Modules** | 21 modules |
+
+</div>
+
+---
+
+## Lisensi
+
+Project ini dikembangkan untuk keperluan kompetisi **KIM Hackathon East Java 2023**.
+
+---
+
+<div align="center">
+
+### Developed by
+
+**Zain Bagus**
+
+[![GitHub](https://img.shields.io/badge/GitHub-zenbgs-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/zenbgs)
+[![Portfolio](https://img.shields.io/badge/Portfolio-zenbgs.github.io-0ea5e9?style=flat-square&logo=google-chrome&logoColor=white)](https://zenbgs.github.io)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-zenbgs-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/zenbgs)
+
+</div>
