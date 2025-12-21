@@ -9,45 +9,45 @@
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-4.x-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
 
-**Sistem manajemen desa/madrasah lengkap dengan panel admin yang powerful**
+**A comprehensive village/madrasah management system with a powerful admin panel**
 
 </div>
 
 ---
 
-## Tentang Project
+## About The Project
 
-Aplikasi web berbasis CodeIgniter untuk manajemen informasi desa/madrasah. Dikembangkan untuk kompetisi **KIM Hackathon East Java 2023**. Sistem ini menyediakan solusi lengkap untuk pengelolaan konten website desa, data kependudukan, berita, galeri, dan berbagai layanan publik.
+A CodeIgniter-based web application for village/madrasah information management. Developed for the **KIM Hackathon East Java 2023** competition. This system provides a complete solution for managing village website content, population data, news, galleries, and various public services.
 
 ---
 
-## Fitur Utama
+## Key Features
 
 ### Public Website
-| Fitur | Deskripsi |
-|-------|-----------|
-| **Beranda** | Landing page dengan berita terbaru, galeri, dan info desa |
-| **Berita** | Portal berita dengan kategori dan pagination |
-| **Layanan** | Informasi layanan publik yang tersedia |
-| **Program** | Showcase program dan kegiatan desa |
-| **Profil** | Profil desa dan struktur organisasi |
-| **Kontak** | Form kontak dan informasi alamat |
+| Feature | Description |
+|---------|-------------|
+| **Homepage** | Landing page with latest news, gallery, and village information |
+| **News** | News portal with categories and pagination |
+| **Services** | Information on available public services |
+| **Programs** | Showcase of village programs and activities |
+| **Profile** | Village profile and organizational structure |
+| **Contact** | Contact form and address information |
 
 ### Admin Panel
-| Modul | Fungsi |
-|-------|--------|
-| **Dashboard** | Statistik dan overview data |
-| **Berita** | CRUD artikel dengan rich text editor |
-| **Galeri** | Manajemen foto dan album |
-| **Pegawai** | Data perangkat desa/karyawan |
-| **Kependudukan** | Data statistik penduduk |
-| **Layanan** | Pengelolaan info layanan |
-| **Program** | Manajemen program kerja |
-| **UMKM** | Direktori usaha lokal |
-| **Video** | Library video kegiatan |
-| **Iklan/Banner** | Manajemen banner promosi |
-| **Konfigurasi** | Pengaturan website (logo, kontak, sosmed) |
-| **User Management** | Kelola akun dan hak akses |
+| Module | Function |
+|--------|----------|
+| **Dashboard** | Statistics and data overview |
+| **News** | CRUD articles with rich text editor |
+| **Gallery** | Photo and album management |
+| **Staff** | Village officials/employee data |
+| **Population** | Population statistics data |
+| **Services** | Service information management |
+| **Programs** | Work program management |
+| **SMEs** | Local business directory |
+| **Videos** | Activity video library |
+| **Ads/Banners** | Promotional banner management |
+| **Configuration** | Website settings (logo, contact, social media) |
+| **User Management** | Account and access rights management |
 
 ---
 
@@ -76,12 +76,12 @@ Aplikasi web berbasis CodeIgniter untuk manajemen informasi desa/madrasah. Dikem
 
 ---
 
-## Struktur Project
+## Project Structure
 
 ```
 hackathon/
 ├── application/
-│   ├── config/          # Konfigurasi aplikasi
+│   ├── config/          # Application configuration
 │   ├── controllers/     # Controllers (32 files)
 │   │   ├── admin/       # Admin panel controllers
 │   │   └── *.php        # Public controllers
@@ -107,15 +107,15 @@ hackathon/
 
 ---
 
-## Instalasi
+## Installation
 
 ### Requirements
-- PHP 7.4 atau lebih tinggi
-- MySQL 8.0 atau lebih tinggi
-- Apache dengan mod_rewrite enabled
+- PHP 7.4 or higher
+- MySQL 8.0 or higher
+- Apache with mod_rewrite enabled
 - Composer (optional)
 
-### Langkah Instalasi
+### Installation Steps
 
 **1. Clone Repository**
 ```bash
@@ -125,14 +125,14 @@ cd hackathon
 
 **2. Setup Database**
 ```bash
-# Buat database baru
+# Create a new database
 mysql -u root -p -e "CREATE DATABASE db_hackathon"
 
-# Import struktur dan data
+# Import structure and data
 mysql -u root -p db_hackathon < db/db_testing.sql
 ```
 
-**3. Konfigurasi Database**
+**3. Configure Database**
 
 Edit file `application/config/database.php`:
 ```php
@@ -145,14 +145,14 @@ $db['default'] = array(
 );
 ```
 
-**4. Konfigurasi Base URL**
+**4. Configure Base URL**
 
 Edit file `application/config/config.php`:
 ```php
 $config['base_url'] = 'http://localhost/hackathon/';
 ```
 
-**5. Jalankan Aplikasi**
+**5. Run Application**
 ```
 http://localhost/hackathon
 ```
@@ -161,26 +161,26 @@ http://localhost/hackathon
 
 ## Database Schema
 
-Aplikasi menggunakan **24 tabel** database:
+The application uses **24 database tables**:
 
-| Tabel | Deskripsi |
-|-------|-----------|
-| `user` | Data pengguna dan autentikasi |
-| `berita` | Artikel berita |
-| `kategori` | Kategori berita |
-| `galeri` | Foto galeri |
-| `pegawai` | Data pegawai/perangkat |
-| `penduduk` | Data kependudukan |
-| `program` | Program kerja |
-| `layanan` | Layanan publik |
-| `umkm` | Data UMKM |
-| `konfigurasi` | Pengaturan website |
-| `identitas_desa` | Identitas desa |
-| `single_page` | Halaman dinamis |
+| Table | Description |
+|-------|-------------|
+| `user` | User data and authentication |
+| `berita` | News articles |
+| `kategori` | News categories |
+| `galeri` | Gallery photos |
+| `pegawai` | Staff/official data |
+| `penduduk` | Population data |
+| `program` | Work programs |
+| `layanan` | Public services |
+| `umkm` | SME data |
+| `konfigurasi` | Website settings |
+| `identitas_desa` | Village identity |
+| `single_page` | Dynamic pages |
 
 ---
 
-## Statistik Project
+## Project Statistics
 
 <div align="center">
 
@@ -196,9 +196,9 @@ Aplikasi menggunakan **24 tabel** database:
 
 ---
 
-## Lisensi
+## License
 
-Project ini dikembangkan untuk keperluan kompetisi **KIM Hackathon East Java 2023**.
+This project was developed for the **KIM Hackathon East Java 2023** competition.
 
 ---
 
